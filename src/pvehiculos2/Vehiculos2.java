@@ -4,7 +4,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-public class Vehiculos implements Serializable {
+public class Vehiculos2 implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -13,10 +13,10 @@ public class Vehiculos implements Serializable {
     int prezoorixe;
     int anomatricula;
 
-    public Vehiculos() {
+    public Vehiculos2() {
     }
 
-    public Vehiculos(String codveh, String nomveh, int prezoorixe, int anomatricula) {
+    public Vehiculos2(String codveh, String nomveh, int prezoorixe, int anomatricula) {
         this.codveh = codveh;
         this.nomveh = nomveh;
         this.prezoorixe = prezoorixe;

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-public class Clientes implements Serializable {
+public class Clientes2 implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -12,10 +12,10 @@ public class Clientes implements Serializable {
     String nomec;
     int ncompras;
 
-    public Clientes() {
+    public Clientes2() {
     }
 
-    public Clientes(String dni, String nomec, int ncompras) {
+    public Clientes2(String dni, String nomec, int ncompras) {
         this.dni = dni;
         this.nomec = nomec;
         this.ncompras = ncompras;
