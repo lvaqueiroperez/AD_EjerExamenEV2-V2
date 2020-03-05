@@ -85,7 +85,9 @@ public class Pvehiculos2 {
             MongoClient mongoClient = new MongoClient("localhost", 27017);
 
             MongoDatabase database = mongoClient.getDatabase("test");
-
+            //OJO!!! PUEDE SER QUE TENGAMOS QUE ACCEDER A 2 COLECCIONES DISTINTAS DE MONGO,
+            //PARA ELLO, SIMPLEMENTE CREAR 2 OBJETOS COMO EL DE ABAJO CON LA MISMA DATABASE,
+            //ACCEDIENDO A UNO U OTRO SEGÚN LA COLECCIÓN QUE QUERAMOS USAR
             MongoCollection<Document> collection = database.getCollection("vendas");
 
             //SEGUIMOS CON LAS VARIABLES DE MONGO
